@@ -1,0 +1,74 @@
+.service_card {
+    position: relative;
+}
+
+.service_card .img {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    transform: translateY(50%);
+    margin: auto;
+    background: var(--color-white);
+}
+
+.service_card .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+.service_card .body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 35% 20% 15%;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.service_card .body .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.service_card .body .info {
+    font-size: 0.9rem;
+}
+
+.service_card .arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--color-white);
+    border-radius: 100px;
+    margin: auto;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* change the styles of .service_card children on hover */
+.service_card:hover .img {
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.3);
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease-out, background-image 0.3s ease-out;
+}
+
+.service_card:hover .body {
+    background: var(--color-bg);
+    color: var(--color-white);
+    transition: all 0.3s ease-out;
+}
+
+.service_card:hover .arrow {
+    background-image: var(--color-accent-grad);
+    transition: background-image 0.3s ease-out;
+}

@@ -1,0 +1,20 @@
+.blog {
+    height: fit-content;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.blog .blogs {
+    margin-top: 60px;
+    width: 100%;
+    gap: 25px;
+}
+
+/* Responsiveness */
+/* 1150px screen */
+@media screen and (max-width: 1150px) {
+    .blogs .col-6 {
+        grid-column: auto / span 12;
+    }
+}

@@ -1,0 +1,11 @@
+.stars {
+    font-size: 18px;
+}
+
+.filled {
+    color: var(--color-accent-one);
+}
+
+.unfilled {
+    color: var(--color-accent-one);
+}

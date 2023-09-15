@@ -1,0 +1,22 @@
+.portfolio {
+    min-height: fit-content;
+    width: 95%;
+    margin: auto;
+    padding: 100px 0 50px 0;
+}
+
+.portfolio .label {
+    color: var(--color-accent-one);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* don't apply to slider_card body's title */
+.portfolio .title:not(.body .title) {
+    font-size: 35px;
+}
+
+.portfolio .title .bold {
+    font-weight: 700;
+}
+

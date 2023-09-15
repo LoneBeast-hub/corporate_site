@@ -1,0 +1,62 @@
+button {
+    padding: 13px;
+    border: 0;
+    flex: 1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.accent {
+    background: var(--color-accent-grad);
+    color: var(--color-white);
+    /* before glow */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+/* exclude the button that has middle card as class */
+.accent:not(.middle_card button):hover {
+    background: var(--color-primary-grad);
+    /* glow */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    transition: all 0.15s ease-out;
+}
+
+.primary {
+    background: var(--color-primary-grad);
+    color: var(--color-white);
+    /* before glow */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+/* exclude the button that has middle card as class */
+.primary:not(.middle_card button):hover {
+    background: var(--color-accent-grad);
+    /* glow */
+    box-shadow: 0 0 20px rgba(255, 44, 150, 0.6);
+    transition: all 0.15s ease-out;
+}
+
+.normal {
+    color: var(--color-black);
+    background: var(--color-white);
+    border: 2px solid var(--color-white);
+    transition: all 0.15s ease-in-out;
+}
+
+.normal:hover {
+    border: 2px solid var(--color-white);
+    background: transparent;
+    color: var(--color-white);
+    transition: all 0.15s ease-out;
+}
+
+.para_style {
+    background: var(--color-accent-grad-two);
+}
+
+/* exclude the button that has middle card as class */
+.para_style:not(.middle_card button):hover {
+    background: var(--color-primary-grad-two);
+}

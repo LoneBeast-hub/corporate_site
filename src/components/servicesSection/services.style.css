@@ -1,0 +1,23 @@
+.services {
+    min-height: 100vh;
+    background: var(--color-white);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.services .services_cards {
+    width: 90%;
+    margin: auto;
+    gap: 0;
+}
+
+.services button {
+    width: max-content;
+    max-height: 50px;
+    font-size: 0.8rem;
+    padding: 17px 30px;
+}

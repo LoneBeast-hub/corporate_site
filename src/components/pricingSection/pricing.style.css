@@ -1,0 +1,46 @@
+.pricing {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.pricing .sub_bg {
+    max-height: 600px;
+    height: 90vh;
+    width: 100%;
+    background: var(--color-bg);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pricing .price_list {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    gap: 2%;
+    margin-top: -400px;
+}
+
+/* responsiveness */
+/* 576px screen */
+@media screen and (max-width: 576px) {
+    .pricing .price_list {
+        margin-top: -360px;
+    }
+}
+
+/* 770px screen */
+@media screen and (max-width: 770px) {
+    .pricing .price_list {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+
+/* 700px height */
+@media screen and (max-height: 700px) {
+    .pricing .price_list {
+        margin-top: -350px;
+    }
+}

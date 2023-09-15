@@ -1,0 +1,140 @@
+.hero {
+    min-height: fit-content;
+    width: 100%;
+    background: var(--color-bg);
+    overflow: hidden;
+}
+
+.hero .hero_wrapper {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    height: 80%;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.hero .hero_wrapper .info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero .hero_wrapper .info .big {
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--color-white);
+}
+
+.hero .hero_wrapper .info .bold {
+    font-weight: 700;
+}
+
+.hero .hero_wrapper .info .text p {
+    color: #03a7d3e6;
+    font-size: 0.9rem;
+}
+
+.hero .hero_wrapper .info .cta_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 70%;
+}
+
+.hero .hero_wrapper .img {
+    width: 60%;
+}
+
+.hero .hero_wrapper .img img {
+    width: 100%;
+}
+
+/* Responsiveness */
+/* 1370px screen */
+@media screen and (max-width: 1370px) {
+    .hero .hero_wrapper .info .big {
+        font-size: 44px;
+        line-height: 2.8rem;
+    }
+}
+
+/* 1025px screen */
+@media screen and (max-width: 1025px) {
+    .hero .hero_wrapper .info .big {
+        font-size: 35px;
+    }
+
+    .hero .hero_wrapper {
+        gap: 2%;
+    }
+
+    .hero .hero_wrapper .info .cta_buttons {
+        width: 90%;
+    }
+}
+
+/* 770px screen */
+@media screen and (max-width: 770px) {
+    .hero .hero_wrapper {
+        flex-direction: column-reverse;
+        place-items: center;
+        gap: 30px;
+    }
+    
+    .hero .hero_wrapper .info {
+        width: 100%;
+        place-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .hero .hero_wrapper .info .big {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .hero .hero_wrapper .info .text {
+        width: 70%;
+    }
+
+    .hero .hero_wrapper .info .text p {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .hero .hero_wrapper .img img {
+        width: 100%;
+    }
+
+    .hero .hero_wrapper .info .cta_buttons {
+        width: 60%;
+    }
+
+    .hero .hero_wrapper .info .cta_buttons button {
+        font-size: 0.7rem;
+    }
+}
+
+/* 400px screen */
+@media screen and (max-width: 400px) {
+    .hero .hero_wrapper .info .text {
+        width: 90%;
+    }
+
+    .hero .hero_wrapper .info .cta_buttons {
+        width: 80%;
+    }
+}
+
+/* 345px screen */
+@media screen and (max-width: 345px) {
+    .hero .hero_wrapper .info .cta_buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+    }
+}
