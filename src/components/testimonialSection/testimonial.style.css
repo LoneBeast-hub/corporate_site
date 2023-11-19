@@ -4,6 +4,8 @@
 
 .testimonials {
     width: 100%;
+    max-width: 1650px;
+    margin: auto;
     display: flex;
     gap: 4%;
 }

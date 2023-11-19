@@ -1,0 +1,65 @@
+.portfolio_section {
+    min-height: fit-content;
+    width: 95%;
+    max-width: 1650px;
+    margin: auto;
+    padding: 100px 0 50px 0;
+}
+
+.portfolio_section .label {
+    color: var(--color-accent-one);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.portfolio_section .title_filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* don't apply to slider_card body's title */
+.portfolio_section .title:not(.body .title) {
+    font-size: 35px;
+    flex-grow: 1;
+}
+
+.portfolio_section .title .bold {
+    font-weight: 700;
+}
+
+/* filters */
+.portfolio_section .filters {
+    display: flex;
+    gap: 3%;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.portfolio_section .filter {
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio_section .filter:hover {
+    color: var(--color-accent-one);
+    transition: all 0.2s ease-out;
+}
+
+.portfolio_section .accent_color {
+    color: var(--color-accent-one);
+}
+
+.portfolio_section .portfolio_items {
+    margin: 70px 0;
+    gap: 3%;
+}
+
+/* Responsivenss */
+/* 575.5px screen */
+@media screen and (max-width: 575.5px) {
+    .portfolio_section .portfolio_items {
+        gap: 30px;
+    }
+}

@@ -15,6 +15,7 @@
     margin-bottom: -150px;
     z-index: 1;
     position: relative;
+    max-width: 1650px;
 }
 
 .super_footer .adjust {
@@ -81,6 +82,7 @@
 .sub_footer .adjust {
     width: 95%;
     margin: auto;
+    max-width: 1650px;
 }
 
 .sub_footer .adjust .title {
@@ -100,7 +102,12 @@
     cursor: pointer;
 }
 
-.sub_footer .adjust ul li.link:hover {
+.sub_footer .adjust ul li.link a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.sub_footer .adjust ul li.link a:hover {
     color: var(--color-accent-one);
     transition: all 0.3s ease-out;
 }

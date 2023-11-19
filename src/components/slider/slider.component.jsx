@@ -1,56 +1,20 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import './slider.style.css';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 // hooks
 import { useEffect, useState } from 'react';
-
 // import required modules
 import { Pagination } from 'swiper/modules';
-
-import SliderCard from '../sliderCard/sliderCard.component';
-// import images
-import NMImg from '../../assets/novel_mockup.jpg';
-import PPImg from '../../assets/purinky_products.jpg';
-import SPImg from '../../assets/satisfy_poster.jpg';
-import MTImg from '../../assets/mockup_template.jpg';
-import LPImg from '../../assets/landing_page.jpg';
-
+// components
+import PortfolioCard from '../portfolioCard/portfolioCard.component';
 // slider data
-const sliderData = [
-    {
-        img: NMImg,
-        title: 'Novel Mockup',
-        label: 'Branding Strategy'
-    },
-    {
-        img: PPImg,
-        title: 'Purinky Products',
-        label: 'Digital Experience'
-    },
-    {
-        img: SPImg,
-        title: 'Satisfy Poster',
-        label: 'Branding Strategy'
-    },
-    {
-        img: MTImg,
-        title: 'Mockup Template',
-        label: 'Experience'
-    },
-    {
-        img: LPImg,
-        title: 'Landing Page',
-        label: 'Digital Experience'
-    }
-]
+import { portfolioData } from '../../data/portfolioData';
 
-const Slider = () => {
+const Slider = ({ selectCount }) => {
     const [slidesPerView, setSlidesPerView] = useState(3); // Default value for desktop screens
 
     useEffect(() => {
@@ -75,6 +39,9 @@ const Slider = () => {
           window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+        // Use slice to get the first 4 objects
+        const selectedCards = portfolioData.slice(0, selectCount);
     
     return (
     <>
@@ -82,10 +49,10 @@ const Slider = () => {
         pagination={true} modules={[Pagination]}
         slidesPerView={slidesPerView} spaceBetween={0}>
         {
-            sliderData.map(({img, title, label}, index) => {
+            selectedCards.map(({img, title, label}, index) => {
             return(
                 <SwiperSlide className='testimonial' key={index}>
-                    <SliderCard
+                    <PortfolioCard
                      img={img}
                      title={title}
                      label={label}

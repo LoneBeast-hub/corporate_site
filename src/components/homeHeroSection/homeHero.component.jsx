@@ -1,13 +1,20 @@
-import './hero.style.css';
-import Header from '../headerSection/header.component';
-import HeroImg from '../../assets/hero_img.png';
+// styles
+import './homeHero.style.css';
+// components
 import CustomButton from '../customButton/customButton.component';
+import Header from '../headerSection/header.component';
+// imgs
+import HeroImg from '../../assets/home_hero_img.png';
 
-const Hero = () => {
+const HomeHero = () => {
     return(
-        <section className='hero'>
+        // hero
+        <section className='home_hero'>
+            {/* header: give children white color */}
             <Header white />
-            <div className="hero_wrapper">
+            {/* children wrapper */}
+            <div className="home_hero_wrapper">
+                {/* info */}
                 <div className="info">
                     <div className="big">
                         <p>
@@ -17,11 +24,13 @@ const Hero = () => {
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget leo quis justo feugiat tincidunt. Fusce eu</p>
                     </div>
+                    {/* buttons */}
                     <div className="cta_buttons">
                         <CustomButton accentColored>Try It Now</CustomButton>
                         <CustomButton primaryColored>Explore More</CustomButton>
                     </div>
                 </div>
+                {/* img */}
                 <div className="img">
                     <img src={HeroImg} alt="" />
                 </div>
@@ -30,4 +39,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default HomeHero;

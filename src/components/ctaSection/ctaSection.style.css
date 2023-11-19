@@ -7,6 +7,7 @@
 
 .cta_section .cta_section_wrapper {
     width: 95%;
+    max-width: 1650px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -26,7 +27,7 @@
 
 .cta_section .cta_section_wrapper .info .label {
     font-size: 1.3rem;
-    color: var(--color-white);
+    color: var(--color-accent-one);
     font-weight: 600;
 }
 

@@ -1,0 +1,151 @@
+/* About Value */
+.about_value {
+    min-height: fit-content;
+    width: 100%;
+    background: var(--color-white);
+    overflow-y: hidden;
+}
+
+/* Wrapper */
+.about_value .about_value_wrapper {
+    width: 95%;
+    max-width: 1650px;
+    margin: auto;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+/* info */
+.about_value .about_value_wrapper .info {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* label */
+.about_value .about_value_wrapper .info .label {
+    color: var(--color-accent-one);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about_value .about_value .info .big {
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--color-white);
+}
+
+.about_value .about_value_wrapper .info .bold {
+    font-weight: 700;
+}
+
+.about_value .about_value_wrapper .info .text p {
+    color: var(--color-black);
+    text-align: justify;
+    line-height: 1.6rem;
+    width: 70%;
+    font-size: 0.9rem;
+}
+
+/* cta button */
+.about_value .about_value_wrapper .info .cta_buttons {
+    display: flex;
+}
+
+.about_value .about_value_wrapper .info .cta_buttons {
+    max-width: 160px;
+}
+
+.about_value .about_value_wrapper .value_list {
+    gap: 30px;
+}
+
+/* Responsiveness */
+/* 1370px screen */
+@media screen and (max-width: 1370px) {
+    .about_value .about_value_wrapper .info .big {
+        font-size: 44px;
+        line-height: 2.8rem;
+    }
+}
+
+/* 1100px screen */
+@media screen and (max-width: 1100px) {
+    .about_value .about_value_wrapper .info {
+        text-align: center;
+    }
+
+    .about_value .about_value_wrapper .info .text p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about_value .about_value_wrapper .info .cta_buttons {
+        margin: auto;
+        width: 100%;
+    }
+
+    .about_value .about_value_wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+}
+
+
+/* 1025px screen */
+@media screen and (max-width: 1025px) {
+    .about_value .about_value_wrapper .info .big {
+        font-size: 35px;
+    }
+}
+
+/* 770px screen */
+@media screen and (max-width: 770px) {
+    /* wrapper */
+    .about_value .about_value_wrapper {
+        place-items: center;
+    }
+    
+    /* info */
+    .about_value .about_value_wrapper .info {
+        width: 100%;
+        place-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .about_value .about_value_wrapper .info .big {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .about_value .about_value_wrapper .info .text {
+        width: 70%;
+    }
+
+    .about_value .about_value_wrapper .info .text p {
+        margin: auto;
+        text-align: center;
+    }
+
+    /* cta button */
+    .about_value .about_value_wrapper .info .cta_buttons button {
+        font-size: 0.7rem;
+    }
+    
+    /* Value list items */
+    .about_value .about_value_wrapper .value_list .col-6 {
+        grid-column: auto / span 12 !important;
+    }
+}
+
+/* 400px screen */
+@media screen and (max-width: 400px) {
+    .about_value .about_value_wrapper .info .text {
+        width: 90%;
+    }
+}

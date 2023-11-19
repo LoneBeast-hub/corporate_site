@@ -1,10 +1,13 @@
+/* blog section */
 .blog {
     height: fit-content;
     width: 95%;
+    max-width: 1650px;
     margin: auto;
     margin-bottom: 100px;
 }
 
+/* blogs */
 .blog .blogs {
     margin-top: 60px;
     width: 100%;

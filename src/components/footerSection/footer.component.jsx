@@ -1,6 +1,11 @@
+// styles
 import './footer.style.css';
+// components
 import CustomButton from '../customButton/customButton.component';
+// React icons
 import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoTwitter } from 'react-icons/bi';
+// react router
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -35,9 +40,12 @@ const Footer = () => {
                     <div className="col-6 quick_links">
                         <p className="title">Quick Links</p>
                         <ul className='info'>
-                            <li className='link'>Services</li>
-                            <li className='link'>Contact</li>
-                            <li className='link'>Blog</li>
+                            <li className='link'><Link to='/'>Home</Link></li>
+                            <li className='link'><Link to='/about'>About</Link></li>
+                            <li className='link'><Link to='/services'>Services</Link></li>
+                            <li className='link'><Link to='/contact'>Contact</Link></li>
+                            <li className='link'><Link to='/blogs'>Blog</Link></li>
+                            <li className='link'><Link to='/portfolio'>portfolio</Link></li>
                         </ul>
                     </div>
                     {/* Resources */}
@@ -56,13 +64,13 @@ const Footer = () => {
                         <p className="title">Contact Us</p>
                         <ul className='info'>
                             <li>
-                                <span className='bold'>Address:</span>John C. Doe XXXX Coding Street Frontend Villa, Tx XXXXX
+                                <span className='bold'>Address: </span>John C. Doe XXXX Coding Street Frontend Villa, Tx XXXXX
                             </li>
                             <li>
-                                <span className='bold'>Phone:</span>+11111111111
+                                <span className='bold'>Phone: </span>+11111111111
                             </li>
                             <li>
-                                <span className='bold'>Email:</span>Info@yourdomain.com
+                                <span className='bold'>Email: </span>Info@yourdomain.com
                             </li>
                         </ul>
                     </div>

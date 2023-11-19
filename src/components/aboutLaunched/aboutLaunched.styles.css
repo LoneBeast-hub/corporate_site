@@ -1,0 +1,127 @@
+/* About Launched */
+.about_launched {
+    width: 100%;
+    padding: 40px 0;
+    background: var(--color-bg);
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+/* wrapper */
+.about_launched_wrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 1650px;
+    height: fit-content;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Amount */
+.about_launched .amount {
+    font-size: 237px;
+    font-weight: 700;
+    line-height: 280px;
+    letter-spacing: 0;
+    color: var(--color-accent-one);
+}
+
+/* line */
+.about_launched .line {
+    width: 1px;
+    height: 145px;
+    background: rgba(255,255,255,.1);
+}
+
+/* flex group */
+.about_launched .flex_group {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* info */
+.about_launched .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 40%;
+}
+
+.about_launched .info .title {
+    font-size: 50px;
+}
+
+.about_launched .info .title .big {
+    font-weight: 700;
+}
+
+.about_launched .info .subtitle {
+    font-size: 18px;
+}
+
+/* cta */
+.about_launched .cta {
+    width: max-content;
+    display: flex;
+    gap: 10px;
+}
+
+.about_launched .cta button {
+    width: 130px;
+    height: fit-content;
+    align-self: center;
+}
+
+/* Responsiveness */
+/* 1026px screen */
+@media screen and (max-width: 1026px) {
+    .about_launched_wrapper {
+        gap: 70px;
+    }
+
+    /* line */
+    .about_launched .line {
+        display: none;
+    }
+
+    /* flex group */
+    .about_launched .flex_group {
+        flex-direction: column;
+    }
+
+    /* info */
+    .about_launched .info {
+        max-width: 70%;
+    }
+}
+
+/* 770px screen */
+@media screen and (max-width: 770px) {
+    /* wrapper */
+    .about_launched .about_launched_wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 60px;
+    }
+
+    /* flex group */
+    .about_launched .flex_group {
+        align-items: center;
+    }
+
+    /* info */
+    .about_launched .info {
+        align-items: center;
+    }
+
+    .about_launched .info .title {
+        text-align: center;
+    }
+
+    .about_launched .info .subtitle {
+        text-align: center;
+    }
+}

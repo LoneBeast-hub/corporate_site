@@ -1,0 +1,94 @@
+.about_team_card {
+    position: relative;
+    flex: 1;
+}
+
+.about_team_card .img {
+    width: 100px;
+    height: 0;
+    padding-bottom: 100px;
+    position: relative;
+    transform: translateY(50%);
+    margin: auto;
+    border-radius: 50%;
+    background: var(--color-accent-two);
+}
+
+.about_team_card .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+.about_team_card .body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+    padding-top: 80px;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 25px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.about_team_card .body .rating_wrapper {
+    position: relative;
+}
+
+.about_team_card .body .rating_wrapper .quote {
+    position: absolute;
+    font-size: 13rem;
+    top: -370%;
+    right: 45%;
+    transform: translateX(50%);
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.about_team_card .texts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    gap: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.about_team_card .texts .team_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about_team_card .texts .name {
+    font-weight: 700;
+}
+
+.about_team_card .texts .work {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.about_team_card .social_icons {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 5px;
+    align-items: center;
+}
+
+/* change the styles of .service_card children on hover */
+.about_team_card:hover .body {
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease-out, background-image 0.3s ease-out;
+}

@@ -4,6 +4,9 @@ button {
     flex: 1;
     border-radius: 50px;
     cursor: pointer;
+    min-width: 130px;
+    width: fit-content;
+    max-width: fit-content;
 }
 
 .accent {

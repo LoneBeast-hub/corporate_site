@@ -87,14 +87,3 @@
     border-radius: 30px;
     transition: box-shadow 0.3s ease-out, background-image 0.3s ease-out;
 }
-
-.service_card:hover .body {
-    background: var(--color-bg);
-    color: var(--color-white);
-    transition: all 0.3s ease-out;
-}
-
-.service_card:hover .arrow {
-    background-image: var(--color-accent-grad);
-    transition: background-image 0.3s ease-out;
-}

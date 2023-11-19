@@ -1,6 +1,6 @@
-import './sliderCard.style.css';
+import './portfolioCard.style.css';
 
-const SliderCard = ({img, title, label}) => {
+const PortfolioCard = ({img, title, label}) => {
     return(
         <div className="slider_card">
             <div className="img">
@@ -14,4 +14,4 @@ const SliderCard = ({img, title, label}) => {
     )
 }
 
-export default SliderCard;
+export default PortfolioCard;

@@ -1,0 +1,45 @@
+.about_team {
+    width: 95%;
+    margin: auto;
+    max-width: 1650px;
+    padding: 50px 0;
+}
+
+.about_team_wrapper {
+    width: 100%;
+}
+
+.about_team .label {
+    color: var(--color-accent-one);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about_team .title {
+    margin-top: 40px;
+    font-size: 35px;
+    line-height: 2.8rem;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.about_team .title .bold {
+    font-weight: 700;
+}
+
+.about_team_cards {
+    width: 100%;
+    max-width: 1650px;
+    margin: auto;
+    display: flex;
+    gap: 4%;
+}
+
+/* Responsivenss */
+/* 766px screen */
+@media screen and (max-width: 766px) {
+    .about_team_cards {
+        flex-direction: column;
+    }
+}

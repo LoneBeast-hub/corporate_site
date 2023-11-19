@@ -1,12 +1,16 @@
+// styles
 import './ctaSection.style.css';
-import CtaImg from '../../assets/men-data.png';
+// components
 import CustomButton from '../customButton/customButton.component';
 
-const CTASection = () => {
+const CTASection = ({img}) => {
     return(
+        // cta section
         <section className='cta_section'>
+            {/* children wrapper */}
             <div className="cta_section_wrapper">
                 <div className="info">
+                    {/* label */}
                     <p className="label">Start Your Project</p>
                     <div className="big">
                         <p>
@@ -21,13 +25,14 @@ const CTASection = () => {
                             vitae elit dapibus fringilla. Maecenas 
                         </p>
                     </div>
+                    {/* buttons */}
                     <div className="cta_buttons">
                         <CustomButton accentColored>Try It Now</CustomButton>
                         <CustomButton primaryColored>Explore More</CustomButton>
                     </div>
                 </div>
                 <div className="img">
-                    <img src={CtaImg} alt="" />
+                    <img src={img} alt="" />
                 </div>
             </div>
         </section>

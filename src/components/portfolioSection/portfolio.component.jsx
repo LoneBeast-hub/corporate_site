@@ -6,7 +6,7 @@ const Portfolio = () => {
         <section className="portfolio">
             <p className="label">Portfolio</p>
             <p className="title"><span className='bold'>latest</span> work</p>
-            <Slider/>
+            <Slider selectCount={5}/>
         </section>
     )
 }

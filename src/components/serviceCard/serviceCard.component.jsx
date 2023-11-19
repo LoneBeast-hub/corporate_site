@@ -1,9 +1,9 @@
 import './serviceCard.style.css';
 import {FaLongArrowAltRight} from 'react-icons/fa';
 
-const ServiceCard = ({img, title, info, key}) => {
+const ServiceCard = ({img, title, info}) => {
     return(
-        <div className="service_card col-6" key={key}>
+        <div className="service_card col-6">
             <div className="img">
                 <img src={img} alt={title} />
             </div>

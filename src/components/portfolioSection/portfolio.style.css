@@ -1,6 +1,7 @@
 .portfolio {
     min-height: fit-content;
     width: 95%;
+    max-width: 1650px;
     margin: auto;
     padding: 100px 0 50px 0;
 }

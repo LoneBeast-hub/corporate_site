@@ -1,0 +1,49 @@
+.about_value_card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 70px #0000001a;
+    border-radius: 30px;
+    width: fit-content;
+    gap: 20px;
+}
+
+.about_value_card .img {
+    height: 60px;
+    align-self: flex-start;
+}
+
+.about_value_card .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about_value_card .info {
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 770px) {
+    .about_value_card {
+        align-items: center;
+        padding: 40px 40px 10px 40px;
+    }
+
+    .about_value_card .img {
+        align-self: center;
+    }
+
+    .about_value_card .info {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 770px) {
+    .about_value_card {
+        padding: 50px 15px 50px 50px;
+    }
+
+    .about_value_card .info {
+        text-align: left !important;
+    }
+}

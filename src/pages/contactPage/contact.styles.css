@@ -1,0 +1,221 @@
+.contact_section {
+    max-width: 1650px;
+    width: 95%;
+    margin: auto;
+}
+
+.contact_section .contact_cards {
+    display: flex;
+    margin: 70px 0;
+    gap: 3%;
+}
+
+.contact_section .contact_card {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.contact_section .contact_card .icon {
+    width: fit-content;
+    margin: 0 auto 25px;
+}
+
+.contact_section .contact_card .title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.contact_section .contact_card .info {
+    color: var(--color-text);
+}
+
+.form_map {
+    min-height: fit-content;
+    width: 100%;
+    background: var(--color-bg);
+    overflow-y: hidden;
+}
+
+.form_map .form_map_wrapper {
+    width: 95%;
+    max-width: 1650px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    height: 80%;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.form_map .form_map_wrapper .info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_map .form_map_wrapper .info .label {
+    font-size: 1.3rem;
+    color: var(--color-accent-one);
+    font-weight: 600;
+}
+
+.form_map .form_map_wrapper .info .big {
+    font-size: 64px !important;
+    line-height: 60px !important;
+    color: var(--color-white);
+}
+
+.form_map .form_map_wrapper .info .bold {
+    font-weight: 700;
+}
+
+.form_map .form_map_wrapper .info .text p {
+    color: #03a7d3e6;
+    font-size: 0.9rem;
+}
+
+.form_map .form_map_wrapper .img {
+    width: 60%;
+}
+
+.form_map .form_map_wrapper .img img {
+    width: 100%;
+}
+
+.form_map form {
+    width: 100%;
+}
+
+.form_map .comment_inputs {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    margin-bottom: 20px;
+}
+
+.form_map .comment_input {
+    width: 100%;
+    background: #1f3c81;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #03a7d3e6;
+}
+
+.form_map .comment_input::placeholder {
+    color: #03a7d3e6;
+}
+
+.form_map form textarea {
+    width: 100%;
+    background: #1f3c81;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #03a7d3e6;
+    margin-top: 20px;
+    resize: none;
+}
+
+.form_map form textarea::placeholder {
+    color: #03a7d3e6;
+}
+
+.form_map form .button_placer {
+    margin: 50px 0 0;
+    width: 100%;
+    display: flex;
+    /* justify-content: end; */
+}
+
+.map_embed {
+    width: 95%;
+    max-width: 1650px;
+    margin: auto;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.map_embed iframe {
+    width: 100%;
+}
+
+/* Responsiveness */
+/* 1370px screen */
+@media screen and (max-width: 1370px) {
+    .form_map .form_map_wrapper .info .big {
+        font-size: 44px;
+        line-height: 2.8rem;
+    }
+}
+
+/* 1025px screen */
+@media screen and (max-width: 1025px) {
+    .form_map .form_map_wrapper .info .big {
+        font-size: 35px;
+    }
+
+    .form_map .form_map_wrapper {
+        gap: 2%;
+    }
+}
+
+/* 942px screen */
+@media screen and (max-width: 942px) {
+    .form_map {
+        width: 100%;
+    }
+
+    .form_map .comment_inputs {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* 770px screen */
+@media screen and (max-width: 770px) {
+    .form_map .form_map_wrapper {
+        flex-direction: column;
+        place-items: center;
+        gap: 30px;
+    }
+    
+    .form_map .form_map_wrapper .info {
+        width: 100%;
+        place-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .form_map .form_map_wrapper .info .big {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .form_map .form_map_wrapper .info .text {
+        width: 70%;
+    }
+
+    .form_map .form_map_wrapper .info .text p {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .form_map .form_map_wrapper .img img {
+        width: 100%;
+    }
+}
+
+/* 400px screen */
+@media screen and (max-width: 400px) {
+    .form_map .form_map_wrapper .info .text {
+        width: 90%;
+    }
+}

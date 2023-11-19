@@ -4,7 +4,7 @@ import { CgQuote } from 'react-icons/cg';
 
 const TestimonialCard = ({clientImg, clientComment, clientName, clientWork, index}) => {
     return(
-        <div className="testimonial_card" key={index}>
+        <div className="testimonial_card">
             <div className="img">
                 <img src={clientImg} alt="" />
             </div>

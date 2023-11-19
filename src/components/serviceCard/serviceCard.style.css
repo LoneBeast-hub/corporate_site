@@ -72,3 +72,11 @@
     background-image: var(--color-accent-grad);
     transition: background-image 0.3s ease-out;
 }
+
+/* Responsivess */
+/* 1024px screen */
+@media screen and (min-width: 1024px) {
+    .service_card {
+        grid-column: auto / span 3;
+    }
+}
